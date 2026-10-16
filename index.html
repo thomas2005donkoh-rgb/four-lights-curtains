@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FOUR LIGHTS CURTAINS AND BLINDS — stylish curtains, blinds and window treatments in Accra, Kasoa and Weija, Ghana.">
+  <title>FOUR LIGHTS CURTAINS AND BLINDS | Style Your Space</title>
+  <style>
+    :root{--ink:#20211f;--cream:#f7f3ed;--sand:#e5d7c5;--gold:#b58b54;--muted:#6d6b66;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(247,243,237,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e9e1d7}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.08em;font-size:.88rem;line-height:1.2}
+    .brand-mark{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--sand);display:grid;place-items:center;font-family:Georgia,serif;font-size:1.1rem}
+    nav{display:flex;align-items:center;gap:25px;font-size:.92rem}nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;background:var(--ink);color:white;border-radius:3px;font-weight:700;transition:.2s}
+    .nav-cta:hover,.btn:hover{background:var(--gold);color:#fff}.menu{display:none;border:0;background:none;font-size:1.6rem}
+    .hero{min-height:590px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:65px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.76rem;font-weight:800;color:var(--gold)}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.12;font-weight:500}h1{font-size:clamp(2.8rem,5vw,5rem);margin:15px 0 20px;letter-spacing:-.04em}h1 em{font-weight:400;color:var(--gold)}
+    .hero p{max-width:490px;color:var(--muted);font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn.secondary{background:transparent;border:1px solid #bfb4a6;color:var(--ink)}.btn.secondary:hover{background:var(--sand)}
+    .hero-art{position:relative;min-height:450px;border-radius:4px;overflow:hidden;background:linear-gradient(135deg,#d9c8b5,#f0e7dc 48%,#b7a18b);display:flex;align-items:center;justify-content:center}
+    .window{position:absolute;inset:40px 20% 38px;background:linear-gradient(135deg,#d7e0dd,#f7f1e7 50%,#a9b6b1);border:12px solid #f5eee5;box-shadow:0 15px 30px #5a453322}
+    .window:before,.window:after{content:"";position:absolute;top:-10px;bottom:-10px;width:52%;background:repeating-linear-gradient(90deg,#9a7658 0,#b38d6c 12px,#d0b49a 22px,#a17d5e 34px);box-shadow:inset -12px 0 15px #4c342633}
+    .window:before{left:-25%;clip-path:polygon(0 0,100% 0,86% 100%,0 100%)}.window:after{right:-25%;clip-path:polygon(0 0,100% 0,100% 100%,14% 100%)}
+    .art-label{position:absolute;bottom:22px;left:22px;background:#fffdf8e8;padding:14px 18px;max-width:210px;font-family:Georgia,serif;font-size:1.15rem}
+    .trust{background:#262724;color:#f8f3ec;padding:23px 0}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}.trust strong{display:block;font-family:Georgia,serif;font-size:1.15rem;font-weight:500}.trust span{color:#cfc7bc;font-size:.86rem}
+    section{padding:85px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head h2{font-size:clamp(2.1rem,4vw,3.2rem);margin:12px 0}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service{background:#fffdf9;border:1px solid #eee6dc;padding:28px 25px;min-height:230px}.service .num{color:var(--gold);font-family:Georgia,serif;font-size:1.8rem}.service h3{font-size:1.55rem;margin:16px 0 8px}.service p{color:var(--muted);margin:0}
+    .feature{background:#eae0d4}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.feature-visual{min-height:360px;background:linear-gradient(135deg,#c9b6a1,#f4ece1);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .swatch{width:48%;height:84%;background:repeating-linear-gradient(90deg,#e8d8c6 0,#c4a78b 7px,#e9d9c7 16px,#b99676 25px);box-shadow:0 20px 40px #5c463522;transform:skewY(-2deg)}
+    .feature h2{font-size:clamp(2.2rem,4vw,3.4rem);margin:13px 0 20px}.feature p{color:#5d5a54}.checks{list-style:none;padding:0;margin:24px 0}.checks li{margin:10px 0}.checks li:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:10px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.step{border-top:1px solid #cbbba8;padding-top:20px}.step b{font-size:.78rem;letter-spacing:.12em;color:var(--gold)}.step h3{font-size:1.4rem;margin:9px 0}.step p{color:var(--muted);margin:0}
+    .contact{background:#262724;color:#f8f3ec}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}.contact h2{font-size:clamp(2.2rem,4vw,3.5rem);margin:12px 0 18px}.contact p{color:#d0c8bd}.contact .eyebrow{color:#d7b486}.contact-list{display:grid;gap:18px;margin-top:28px}.contact-item small{display:block;color:#c5b9aa;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem}.contact-item strong{font-size:1.05rem}.contact-card{background:#f8f3ec;color:var(--ink);padding:30px}.contact-card h3{font-size:1.7rem;margin:0 0 10px}.contact-card p{color:var(--muted)}.contact-card .btn{width:100%;margin-top:10px}
+    footer{padding:24px 0;background:#1d1e1c;color:#cfc7bc;font-size:.82rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.nav{flex-wrap:wrap}.menu{display:block}nav{display:none;width:100%;flex-direction:column;align-items:flex-start;padding:10px 0 5px;gap:14px}nav.open{display:flex}.nav-cta{display:none}.hero{grid-template-columns:1fr;padding:45px 0;gap:28px}.hero-art{min-height:350px}.trust-grid{grid-template-columns:1fr;gap:15px}.trust-grid>div{padding:4px}.services,.steps{grid-template-columns:1fr}.feature-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.feature-visual{min-height:280px}section{padding:62px 0}.section-head{margin-bottom:30px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Four Lights home"><span class="brand-mark">4L</span><span>FOUR LIGHTS<br>CURTAINS & BLINDS</span></a>
+    <button class="menu" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#services">Our Services</a><a href="#about">Why Four Lights</a><a href="#process">How It Works</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/233507034644?text=Hello%20Four%20Lights%2C%20I%27d%20like%20to%20enquire%20about%20curtains%20and%20blinds." target="_blank" rel="noopener">Get a Quote ↗</a>
+  </div>
+</header>
+<main>
+  <section class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Beautiful windows. Better living.</div>
+      <h1>Make your space feel <em>like home.</em></h1>
+      <p>Thoughtfully chosen curtains and blinds to bring comfort, privacy and style to your home or workspace.</p>
+      <div class="actions"><a class="btn" href="https://wa.me/233507034644?text=Hello%20Four%20Lights%2C%20I%27d%20like%20a%20curtains%20and%20blinds%20quote." target="_blank" rel="noopener">Chat with us on WhatsApp ↗</a><a class="btn secondary" href="#services">Explore services</a></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Stylized window dressed with elegant curtains"><div class="window"></div><div class="art-label">The finishing touch your room deserves.</div></div>
+  </section>
+  <div class="trust"><div class="wrap trust-grid"><div><strong>Style that suits you</strong><span>Options for different tastes and spaces</span></div><div><strong>Made for your space</strong><span>Guidance on choosing the right look</span></div><div><strong>Local service</strong><span>Serving Accra, Kasoa and Weija</span></div></div></div>
+  <section id="services">
+    <div class="wrap"><div class="section-head"><div class="eyebrow">What we do</div><h2>Window styling, made simple.</h2><p>From a calm bedroom retreat to a polished living room, we help you find a look that feels right.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><h3>Elegant Curtains</h3><p>Bring warmth, softness and personality to your room with curtain styles that complement your interior.</p></article>
+        <article class="service"><div class="num">02</div><h3>Modern Blinds</h3><p>A neat, practical option for managing light and privacy in homes, offices and other spaces.</p></article>
+        <article class="service"><div class="num">03</div><h3>Style Guidance</h3><p>Get help choosing colours, fabrics and finishes that work with your windows and décor.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="feature" id="about">
+    <div class="wrap feature-grid"><div class="feature-visual" role="img" aria-label="Decorative fabric swatch representing curtain materials"><div class="swatch"></div></div>
+      <div><div class="eyebrow">Why Four Lights</div><h2>Small details. A whole new feeling.</h2><p>The right window dressing can soften a room, tie your colours together and help create the atmosphere you want.</p><ul class="checks"><li>Options for different room styles</li><li>Help choosing colours and finishes</li><li>Friendly enquiries and quote requests</li><li>Serving Accra, Kasoa and Weija</li></ul><a class="btn" href="https://wa.me/233507034644?text=Hello%20Four%20Lights%2C%20please%20help%20me%20choose%20curtains%20or%20blinds." target="_blank" rel="noopener">Let’s plan your space ↗</a></div>
+    </div>
+  </section>
+  <section id="process">
+    <div class="wrap"><div class="section-head"><div class="eyebrow">How it works</div><h2>Three simple steps.</h2><p>Start with an idea, and let’s work towards the look you want.</p></div>
+      <div class="steps"><div class="step"><b>STEP 01</b><h3>Tell us what you need</h3><p>Share your room type, preferred style and location with us.</p></div><div class="step"><b>STEP 02</b><h3>Discuss your options</h3><p>We’ll talk through suitable curtain or blind ideas for your space.</p></div><div class="step"><b>STEP 03</b><h3>Request your quote</h3><p>Send your measurements or arrange a discussion about your project.</p></div></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid"><div><div class="eyebrow">Let’s talk</div><h2>Ready to refresh your windows?</h2><p>Tell us a little about your space. We’ll be happy to hear from you and discuss your curtain or blind needs.</p>
+      <div class="contact-list"><div class="contact-item"><small>Call us</small><strong><a href="tel:+233507034644">050 703 4644</a></strong></div><div class="contact-item"><small>Service areas</small><strong>Accra · Kasoa · Weija, Ghana</strong></div><div class="contact-item"><small>Message us</small><strong>WhatsApp enquiries welcome</strong></div></div>
+    </div>
+    <div class="contact-card"><h3>Request a quote</h3><p>Tap below to message us on WhatsApp. Include your room type, approximate window measurements and the style you have in mind.</p><a class="btn" href="https://wa.me/233507034644?text=Hello%20Four%20Lights%20Curtains%20and%20Blinds!%0A%0AI%27d%20like%20a%20quote.%0ARoom%20type%3A%20%0ALocation%3A%20%0AWindow%20measurements%3A%20%0APreferred%20style%3A%20" target="_blank" rel="noopener">Start WhatsApp enquiry ↗</a></div></div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> FOUR LIGHTS CURTAINS AND BLINDS</span><span>Thoughtful window styling in Accra, Kasoa & Weija.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body>
+</html>
